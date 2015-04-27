@@ -1,0 +1,64 @@
+success, 541<->542
+success, 542<->545
+success, 544<->545
+success, 545<->553
+success, 546<->547
+success, 547<->553
+success, 548<->553
+success, 570<->571
+success, 571<->575
+success, 573<->575
+586 no sim point!
+587 no sim point!
+592 no sim point!
+593 no sim point!
+594 no sim point!
+595 no sim point!
+596 no sim point!
+597 no sim point!
+598 no sim point!
+599 no sim point!
+600 no sim point!
+601 no sim point!
+602 no sim point!
+603 no sim point!
+604 no sim point!
+605 no sim point!
+success, 613<->614
+success, 614<->618
+success, 615<->618
+success, 616<->618
+success, 617<->618
+success, 618<->619
+success, 619<->623
+success, 620<->623
+success, 621<->623
+success, 622<->623
+success, 623<->624
+success, 624<->627
+success, 626<->627
+success, 628<->629
+success, 629<->633
+success, 630<->633
+success, 632<->633
+success, 633<->636
+success, 634<->636
+success, 635<->636
+success, 638<->643
+success, 643<->644
+success, 644<->645
+success, 647<->649
+success, 651<->652
+success, 652<->657
+success, 653<->657
+success, 658<->660
+success, 659<->660
+success, 660<->661
+success, 661<->665
+success, 662<->665
+success, 663<->665
+success, 664<->665
+success, 665<->668
+success, 667<->668
+correct = 46
+fault = 28

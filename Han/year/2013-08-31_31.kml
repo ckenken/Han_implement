@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+<name>Location history from 08/31/2013 to 09/01/2013</name>
+<open>1</open>
+<description/>
+<StyleMap id="multiTrack">
+<Pair>
+<key>normal</key>
+<styleUrl>#multiTrack_n</styleUrl>
+</Pair>
+<Pair>
+<key>highlight</key>
+<styleUrl>#multiTrack_h</styleUrl>
+</Pair>
+</StyleMap>
+<Style id="multiTrack_n">
+<IconStyle>
+<Icon>
+<href>http://earth.google.com/images/kml-icons/track-directional/track-0.png</href>
+</Icon>
+</IconStyle>
+<LineStyle>
+<color>99ffac59</color>
+<width>6</width>
+</LineStyle>
+</Style>
+<Style id="multiTrack_h">
+<IconStyle>
+<scale>1.2</scale>
+<Icon>
+<href>http://earth.google.com/images/kml-icons/track-directional/track-0.png</href>
+</Icon>
+</IconStyle>
+<LineStyle>
+<color>99ffac59</color>
+<width>8</width>
+</LineStyle>
+</Style>
+<Placemark>
+<name>Latitude User</name>
+<description>Location history for Latitude User from 08/31/2013 to 09/01/2013</description>
+<styleUrl>#multiTrack</styleUrl>
+<gx:Track>
+<altitudeMode>clampToGround</altitudeMode>
+<when>2013-08-30T13:39:05.646-07:00</when>
+<gx:coord>169.1355308 -44.6924317 0</gx:coord>
+<when>2013-08-30T13:39:51.899-07:00</when>
+<gx:coord>169.1355308 -44.6924317 0</gx:coord>
+<when>2013-08-30T13:43:42.340-07:00</when>
+<gx:coord>169.1355308 -44.6924317 0</gx:coord>
+<when>2013-08-30T13:44:28.279-07:00</when>
+<gx:coord>169.1344741 -44.6941802 304</gx:coord>
+<when>2013-08-30T13:45:21.075-07:00</when>
+<gx:coord>169.1344683 -44.6942018 295</gx:coord>
+<when>2013-08-30T13:46:30.522-07:00</when>
+<gx:coord>169.1409548 -44.6929177 0</gx:coord>
+<when>2013-08-30T14:22:38.105-07:00</when>
+<gx:coord>169.1302002 -44.6969702 294</gx:coord>
+<when>2013-08-30T14:23:30.140-07:00</when>
+<gx:coord>169.1307014 -44.6968097 308</gx:coord>
+<when>2013-08-30T14:27:17.605-07:00</when>
+<gx:coord>169.1305363 -44.696782 295</gx:coord>
+<when>2013-08-30T15:04:01.250-07:00</when>
+<gx:coord>169.1327204 -44.6896705 326</gx:coord>
+<when>2013-08-30T16:44:02.922-07:00</when>
+<gx:coord>169.2473537 -44.7252012 336</gx:coord>
+<when>2013-08-30T16:44:51.810-07:00</when>
+<gx:coord>169.176704 -44.6999658 0</gx:coord>
+<when>2013-08-30T16:46:25.925-07:00</when>
+<gx:coord>169.2474259 -44.7251634 349</gx:coord>
+<when>2013-08-30T17:11:56.418-07:00</when>
+<gx:coord>169.2475267 -44.7251938 350</gx:coord>
+<when>2013-08-30T18:15:08.991-07:00</when>
+<gx:coord>169.1434266 -44.6937422 310</gx:coord>
+<when>2013-08-30T18:15:54.073-07:00</when>
+<gx:coord>169.1508337 -44.6929127 315</gx:coord>
+<when>2013-08-30T18:16:58.410-07:00</when>
+<gx:coord>169.1679412 -44.6965062 311</gx:coord>
+<when>2013-08-30T18:17:43.453-07:00</when>
+<gx:coord>169.1739854 -44.6930548 315</gx:coord>
+<when>2013-08-30T18:25:11.935-07:00</when>
+<gx:coord>169.2410619 -44.6245529 322</gx:coord>
+<when>2013-08-30T18:33:11.777-07:00</when>
+<gx:coord>169.2476825 -44.5302334 336</gx:coord>
+<when>2013-08-30T18:46:10.826-07:00</when>
+<gx:coord>169.1827187 -44.4309471 395</gx:coord>
+<when>2013-08-30T20:31:49.363-07:00</when>
+<gx:coord>169.1381499 -43.7700918 44</gx:coord>
+<when>2013-08-30T20:32:34.692-07:00</when>
+<gx:coord>169.1472195 -43.7619337 44</gx:coord>
+<when>2013-08-30T20:33:19.732-07:00</when>
+<gx:coord>169.1533776 -43.7553103 41</gx:coord>
+<when>2013-08-30T23:17:33.637-07:00</when>
+<gx:coord>170.0164102 -43.4684312 0</gx:coord>
+<when>2013-08-30T23:17:49.704-07:00</when>
+<gx:coord>170.0164102 -43.4684312 0</gx:coord>
+<when>2013-08-30T23:18:35.276-07:00</when>
+<gx:coord>170.0176216 -43.4661426 176</gx:coord>
+<when>2013-08-30T23:20:03.311-07:00</when>
+<gx:coord>170.0164102 -43.4684312 0</gx:coord>
+<when>2013-08-31T00:09:23.969-07:00</when>
+<gx:coord>170.0164102 -43.4684312 0</gx:coord>
+<when>2013-08-31T00:20:39.746-07:00</when>
+<gx:coord>170.0164102 -43.4684312 0</gx:coord>
+<when>2013-08-31T00:21:39.887-07:00</when>
+<gx:coord>170.0164102 -43.4684312 0</gx:coord>
+<when>2013-08-31T00:23:11.564-07:00</when>
+<gx:coord>170.0164102 -43.4684312 0</gx:coord>
+<when>2013-08-31T00:24:11.667-07:00</when>
+<gx:coord>170.0164102 -43.4684312 0</gx:coord>
+<when>2013-08-31T00:34:04.784-07:00</when>
+<gx:coord>170.0185793 -43.4660281 186</gx:coord>
+<when>2013-08-31T00:46:56.557-07:00</when>
+<gx:coord>170.0164102 -43.4684312 0</gx:coord>
+<when>2013-08-31T01:17:30.976-07:00</when>
+<gx:coord>170.0164102 -43.4684312 0</gx:coord>
+<when>2013-08-31T01:40:16.933-07:00</when>
+<gx:coord>170.0164102 -43.4684312 0</gx:coord>
+<when>2013-08-31T01:45:23.468-07:00</when>
+<gx:coord>170.0164102 -43.4684312 0</gx:coord>
+<when>2013-08-31T01:46:21.329-07:00</when>
+<gx:coord>170.0164102 -43.4684312 0</gx:coord>
+<when>2013-08-31T02:18:12.951-07:00</when>
+<gx:coord>170.0164102 -43.4684312 0</gx:coord>
+<when>2013-08-31T02:35:22.026-07:00</when>
+<gx:coord>170.0164102 -43.4684312 0</gx:coord>
+<when>2013-08-31T02:38:24.254-07:00</when>
+<gx:coord>170.0177305 -43.4652715 171</gx:coord>
+<when>2013-08-31T02:39:09.760-07:00</when>
+<gx:coord>170.0177678 -43.4649889 177</gx:coord>
+<when>2013-08-31T02:39:55.745-07:00</when>
+<gx:coord>170.017793 -43.4646686 176</gx:coord>
+<when>2013-08-31T02:40:40.733-07:00</when>
+<gx:coord>170.017683 -43.4643952 172</gx:coord>
+<when>2013-08-31T02:41:26.724-07:00</when>
+<gx:coord>170.0178002 -43.4641732 178</gx:coord>
+<when>2013-08-31T02:54:49.602-07:00</when>
+<gx:coord>170.0183001 -43.4637158 179</gx:coord>
+<when>2013-08-31T03:04:07.646-07:00</when>
+<gx:coord>170.0160448 -43.4665712 169</gx:coord>
+<when>2013-08-31T03:05:49.659-07:00</when>
+<gx:coord>170.0160743 -43.4666623 170</gx:coord>
+<when>2013-08-31T03:22:07.380-07:00</when>
+<gx:coord>170.0164102 -43.4684312 0</gx:coord>
+<when>2013-08-31T03:23:07.469-07:00</when>
+<gx:coord>170.0164102 -43.4684312 0</gx:coord>
+<when>2013-08-31T03:51:27.667-07:00</when>
+<gx:coord>170.0164102 -43.4684312 0</gx:coord>
+<when>2013-08-31T03:52:14.495-07:00</when>
+<gx:coord>170.0164102 -43.4684312 0</gx:coord>
+</gx:Track>
+</Placemark>
+</Document>
+</kml>

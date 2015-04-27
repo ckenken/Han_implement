@@ -1,0 +1,70 @@
+success, 573<->576
+success, 574<->576
+success, 578<->580
+success, 579<->580
+success, 582<->583
+success, 598<->599
+success, 599<->602
+success, 600<->602
+success, 601<->602
+success, 614<->623
+success, 615<->623
+success, 616<->623
+success, 617<->623
+success, 618<->623
+success, 619<->623
+success, 620<->623
+success, 621<->623
+success, 622<->623
+success, 652<->653
+success, 704<->709
+success, 705<->709
+success, 706<->709
+success, 707<->709
+success, 708<->709
+success, 718<->721
+success, 719<->721
+success, 720<->721
+success, 721<->722
+success, 722<->723
+success, 744<->745
+success, 746<->747
+success, 810<->812
+success, 811<->812
+success, 815<->816
+success, 816<->817
+success, 827<->829
+success, 828<->830
+success, 829<->830
+success, 845<->846
+847 no sim point!
+848 no sim point!
+849 no sim point!
+success, 858<->869
+success, 860<->869
+success, 861<->869
+success, 866<->869
+success, 870<->871
+success, 871<->872
+success, 872<->873
+success, 873<->874
+success, 874<->875
+success, 875<->876
+success, 876<->877
+success, 910<->911
+success, 912<->917
+success, 913<->917
+success, 914<->917
+success, 915<->917
+success, 916<->917
+success, 922<->924
+success, 923<->924
+950 no sim point!
+success, 951<->952
+success, 965<->966
+success, 969<->970
+973 no sim point!
+success, 985<->986
+994 no sim point!
+correct = 62
+fault = 83

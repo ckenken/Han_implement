@@ -1,0 +1,652 @@
+success, 601<->602
+fail, 148
+seqid = 603 , minsymbol = 205
+cannot predict! (Not in frequent pattern)
+fail, 148
+fail, 148
+fail, 148
+fail, 148
+fail, 148
+fail, 148
+seqid = 610 , minsymbol = 18
+cannot predict! (Not in frequent pattern)
+seqid = 611 , minsymbol = 18
+cannot predict! (Not in frequent pattern)
+seqid = 612 , minsymbol = 18
+cannot predict! (Not in frequent pattern)
+seqid = 613 , minsymbol = 18
+cannot predict! (Not in frequent pattern)
+success, 614<->623
+success, 615<->623
+success, 616<->623
+success, 617<->623
+success, 618<->623
+success, 619<->623
+success, 620<->623
+success, 621<->623
+success, 622<->623
+fail, 181
+fail, 181
+fail, 181
+fail, 181
+fail, 181
+fail, 181
+fail, 181
+fail, 181
+fail, 181
+fail, 181
+fail, 181
+seqid = 634 , minsymbol = 206
+cannot predict! (Not in frequent pattern)
+seqid = 635 , minsymbol = 122
+cannot predict! (Not in frequent pattern)
+seqid = 636 , minsymbol = 91
+cannot predict! (Not in frequent pattern)
+seqid = 637 , minsymbol = 122
+cannot predict! (Not in frequent pattern)
+seqid = 638 , minsymbol = 28
+cannot predict! (Not in frequent pattern)
+seqid = 639 , minsymbol = 28
+cannot predict! (Not in frequent pattern)
+seqid = 640 , minsymbol = 207
+cannot predict! (Not in frequent pattern)
+seqid = 641 , minsymbol = 208
+cannot predict! (Not in frequent pattern)
+seqid = 642 , minsymbol = 209
+cannot predict! (Not in frequent pattern)
+seqid = 643 , minsymbol = 210
+cannot predict! (Not in frequent pattern)
+seqid = 644 , minsymbol = 211
+cannot predict! (Not in frequent pattern)
+seqid = 645 , minsymbol = 212
+cannot predict! (Not in frequent pattern)
+seqid = 646 , minsymbol = 213
+cannot predict! (Not in frequent pattern)
+seqid = 647 , minsymbol = 90
+cannot predict! (Not in frequent pattern)
+seqid = 648 , minsymbol = 29
+cannot predict! (Not in frequent pattern)
+seqid = 649 , minsymbol = 29
+cannot predict! (Not in frequent pattern)
+seqid = 650 , minsymbol = 29
+cannot predict! (Not in frequent pattern)
+fail, 457
+success, 652<->653
+fail, 457
+seqid = 654 , minsymbol = 84
+cannot predict! (Not in frequent pattern)
+fail, 457
+fail, 457
+seqid = 657 , minsymbol = 115
+cannot predict! (Not in frequent pattern)
+seqid = 658 , minsymbol = 11
+cannot predict! (Not in frequent pattern)
+success, 659<->660
+fail, 135
+fail, 135
+seqid = 662 , minsymbol = 48
+cannot predict! (Not in frequent pattern)
+seqid = 663 , minsymbol = 214
+cannot predict! (Not in frequent pattern)
+seqid = 664 , minsymbol = 94
+cannot predict! (Not in frequent pattern)
+seqid = 665 , minsymbol = 94
+cannot predict! (Not in frequent pattern)
+seqid = 666 , minsymbol = 94
+cannot predict! (Not in frequent pattern)
+seqid = 667 , minsymbol = 215
+cannot predict! (Not in frequent pattern)
+seqid = 668 , minsymbol = 216
+cannot predict! (Not in frequent pattern)
+seqid = 669 , minsymbol = 217
+cannot predict! (Not in frequent pattern)
+seqid = 670 , minsymbol = 218
+cannot predict! (Not in frequent pattern)
+seqid = 671 , minsymbol = 219
+cannot predict! (Not in frequent pattern)
+seqid = 672 , minsymbol = 220
+cannot predict! (Not in frequent pattern)
+seqid = 673 , minsymbol = 221
+cannot predict! (Not in frequent pattern)
+seqid = 674 , minsymbol = 222
+cannot predict! (Not in frequent pattern)
+seqid = 675 , minsymbol = 223
+cannot predict! (Not in frequent pattern)
+seqid = 676 , minsymbol = 123
+cannot predict! (Not in frequent pattern)
+seqid = 677 , minsymbol = 224
+cannot predict! (Not in frequent pattern)
+seqid = 678 , minsymbol = 123
+cannot predict! (Not in frequent pattern)
+seqid = 679 , minsymbol = 225
+cannot predict! (Not in frequent pattern)
+seqid = 680 , minsymbol = 226
+cannot predict! (Not in frequent pattern)
+seqid = 681 , minsymbol = 95
+cannot predict! (Not in frequent pattern)
+seqid = 682 , minsymbol = 95
+cannot predict! (Not in frequent pattern)
+seqid = 683 , minsymbol = 95
+cannot predict! (Not in frequent pattern)
+seqid = 684 , minsymbol = 227
+cannot predict! (Not in frequent pattern)
+seqid = 685 , minsymbol = 228
+cannot predict! (Not in frequent pattern)
+seqid = 686 , minsymbol = 137
+cannot predict! (Not in frequent pattern)
+seqid = 687 , minsymbol = 137
+cannot predict! (Not in frequent pattern)
+seqid = 688 , minsymbol = 124
+cannot predict! (Not in frequent pattern)
+seqid = 689 , minsymbol = 96
+cannot predict! (Not in frequent pattern)
+seqid = 690 , minsymbol = 229
+cannot predict! (Not in frequent pattern)
+seqid = 691 , minsymbol = 106
+cannot predict! (Not in frequent pattern)
+seqid = 692 , minsymbol = 106
+cannot predict! (Not in frequent pattern)
+seqid = 693 , minsymbol = 230
+cannot predict! (Not in frequent pattern)
+seqid = 694 , minsymbol = 231
+cannot predict! (Not in frequent pattern)
+seqid = 695 , minsymbol = 94
+cannot predict! (Not in frequent pattern)
+seqid = 696 , minsymbol = 138
+cannot predict! (Not in frequent pattern)
+seqid = 697 , minsymbol = 138
+cannot predict! (Not in frequent pattern)
+seqid = 698 , minsymbol = 18
+cannot predict! (Not in frequent pattern)
+seqid = 699 , minsymbol = 18
+cannot predict! (Not in frequent pattern)
+seqid = 700 , minsymbol = 18
+cannot predict! (Not in frequent pattern)
+seqid = 701 , minsymbol = 18
+cannot predict! (Not in frequent pattern)
+seqid = 702 , minsymbol = 18
+cannot predict! (Not in frequent pattern)
+seqid = 703 , minsymbol = 18
+cannot predict! (Not in frequent pattern)
+success, 704<->709
+success, 705<->709
+success, 706<->709
+success, 707<->709
+success, 708<->709
+fail, 181
+seqid = 710 , minsymbol = 29
+cannot predict! (Not in frequent pattern)
+seqid = 711 , minsymbol = 107
+cannot predict! (Not in frequent pattern)
+seqid = 712 , minsymbol = 107
+cannot predict! (Not in frequent pattern)
+fail, 457
+seqid = 714 , minsymbol = 84
+cannot predict! (Not in frequent pattern)
+fail, 457
+seqid = 716 , minsymbol = 11
+cannot predict! (Not in frequent pattern)
+seqid = 717 , minsymbol = 11
+cannot predict! (Not in frequent pattern)
+success, 718<->721
+success, 719<->721
+success, 720<->721
+success, 721<->722
+success, 722<->723
+fail, 148
+seqid = 724 , minsymbol = 232
+cannot predict! (Not in frequent pattern)
+seqid = 725 , minsymbol = 111
+cannot predict! (Not in frequent pattern)
+seqid = 726 , minsymbol = 111
+cannot predict! (Not in frequent pattern)
+seqid = 727 , minsymbol = 111
+cannot predict! (Not in frequent pattern)
+seqid = 728 , minsymbol = 111
+cannot predict! (Not in frequent pattern)
+seqid = 729 , minsymbol = 111
+cannot predict! (Not in frequent pattern)
+seqid = 730 , minsymbol = 111
+cannot predict! (Not in frequent pattern)
+seqid = 731 , minsymbol = 111
+cannot predict! (Not in frequent pattern)
+seqid = 732 , minsymbol = 111
+cannot predict! (Not in frequent pattern)
+seqid = 733 , minsymbol = 35
+cannot predict! (Not in frequent pattern)
+seqid = 734 , minsymbol = 35
+cannot predict! (Not in frequent pattern)
+seqid = 735 , minsymbol = 87
+cannot predict! (Not in frequent pattern)
+seqid = 736 , minsymbol = 36
+cannot predict! (Not in frequent pattern)
+seqid = 737 , minsymbol = 36
+cannot predict! (Not in frequent pattern)
+seqid = 738 , minsymbol = 36
+cannot predict! (Not in frequent pattern)
+seqid = 739 , minsymbol = 36
+cannot predict! (Not in frequent pattern)
+seqid = 740 , minsymbol = 28
+cannot predict! (Not in frequent pattern)
+seqid = 741 , minsymbol = 28
+cannot predict! (Not in frequent pattern)
+seqid = 742 , minsymbol = 91
+cannot predict! (Not in frequent pattern)
+fail, 457
+success, 744<->745
+fail, 457
+success, 746<->747
+fail, 457
+fail, 457
+seqid = 749 , minsymbol = 84
+cannot predict! (Not in frequent pattern)
+fail, 457
+seqid = 751 , minsymbol = 233
+cannot predict! (Not in frequent pattern)
+seqid = 752 , minsymbol = 124
+cannot predict! (Not in frequent pattern)
+seqid = 753 , minsymbol = 234
+cannot predict! (Not in frequent pattern)
+seqid = 754 , minsymbol = 235
+cannot predict! (Not in frequent pattern)
+seqid = 755 , minsymbol = 99
+cannot predict! (Not in frequent pattern)
+seqid = 756 , minsymbol = 99
+cannot predict! (Not in frequent pattern)
+seqid = 757 , minsymbol = 99
+cannot predict! (Not in frequent pattern)
+seqid = 758 , minsymbol = 99
+cannot predict! (Not in frequent pattern)
+seqid = 759 , minsymbol = 99
+cannot predict! (Not in frequent pattern)
+seqid = 760 , minsymbol = 100
+cannot predict! (Not in frequent pattern)
+seqid = 761 , minsymbol = 100
+cannot predict! (Not in frequent pattern)
+seqid = 762 , minsymbol = 101
+cannot predict! (Not in frequent pattern)
+seqid = 763 , minsymbol = 131
+cannot predict! (Not in frequent pattern)
+seqid = 764 , minsymbol = 102
+cannot predict! (Not in frequent pattern)
+seqid = 765 , minsymbol = 102
+cannot predict! (Not in frequent pattern)
+seqid = 766 , minsymbol = 102
+cannot predict! (Not in frequent pattern)
+seqid = 767 , minsymbol = 102
+cannot predict! (Not in frequent pattern)
+seqid = 768 , minsymbol = 130
+cannot predict! (Not in frequent pattern)
+seqid = 769 , minsymbol = 236
+cannot predict! (Not in frequent pattern)
+seqid = 770 , minsymbol = 130
+cannot predict! (Not in frequent pattern)
+seqid = 771 , minsymbol = 103
+cannot predict! (Not in frequent pattern)
+seqid = 772 , minsymbol = 237
+cannot predict! (Not in frequent pattern)
+seqid = 773 , minsymbol = 126
+cannot predict! (Not in frequent pattern)
+seqid = 774 , minsymbol = 238
+cannot predict! (Not in frequent pattern)
+seqid = 775 , minsymbol = 126
+cannot predict! (Not in frequent pattern)
+seqid = 776 , minsymbol = 239
+cannot predict! (Not in frequent pattern)
+seqid = 777 , minsymbol = 139
+cannot predict! (Not in frequent pattern)
+seqid = 778 , minsymbol = 139
+cannot predict! (Not in frequent pattern)
+seqid = 779 , minsymbol = 240
+cannot predict! (Not in frequent pattern)
+seqid = 780 , minsymbol = 91
+cannot predict! (Not in frequent pattern)
+seqid = 781 , minsymbol = 28
+cannot predict! (Not in frequent pattern)
+seqid = 782 , minsymbol = 29
+cannot predict! (Not in frequent pattern)
+seqid = 783 , minsymbol = 107
+cannot predict! (Not in frequent pattern)
+fail, 457
+seqid = 785 , minsymbol = 84
+cannot predict! (Not in frequent pattern)
+seqid = 786 , minsymbol = 84
+cannot predict! (Not in frequent pattern)
+seqid = 787 , minsymbol = 9
+cannot predict! (Not in frequent pattern)
+seqid = 788 , minsymbol = 124
+cannot predict! (Not in frequent pattern)
+seqid = 789 , minsymbol = 96
+cannot predict! (Not in frequent pattern)
+seqid = 790 , minsymbol = 131
+cannot predict! (Not in frequent pattern)
+seqid = 791 , minsymbol = 241
+cannot predict! (Not in frequent pattern)
+seqid = 792 , minsymbol = 131
+cannot predict! (Not in frequent pattern)
+seqid = 793 , minsymbol = 101
+cannot predict! (Not in frequent pattern)
+seqid = 794 , minsymbol = 101
+cannot predict! (Not in frequent pattern)
+seqid = 795 , minsymbol = 101
+cannot predict! (Not in frequent pattern)
+seqid = 796 , minsymbol = 101
+cannot predict! (Not in frequent pattern)
+seqid = 797 , minsymbol = 102
+cannot predict! (Not in frequent pattern)
+seqid = 798 , minsymbol = 130
+cannot predict! (Not in frequent pattern)
+seqid = 799 , minsymbol = 103
+cannot predict! (Not in frequent pattern)
+seqid = 800 , minsymbol = 130
+cannot predict! (Not in frequent pattern)
+seqid = 801 , minsymbol = 237
+cannot predict! (Not in frequent pattern)
+seqid = 802 , minsymbol = 95
+cannot predict! (Not in frequent pattern)
+seqid = 803 , minsymbol = 95
+cannot predict! (Not in frequent pattern)
+seqid = 804 , minsymbol = 95
+cannot predict! (Not in frequent pattern)
+seqid = 805 , minsymbol = 27
+cannot predict! (Not in frequent pattern)
+seqid = 806 , minsymbol = 91
+cannot predict! (Not in frequent pattern)
+seqid = 807 , minsymbol = 91
+cannot predict! (Not in frequent pattern)
+seqid = 808 , minsymbol = 29
+cannot predict! (Not in frequent pattern)
+seqid = 809 , minsymbol = 107
+cannot predict! (Not in frequent pattern)
+success, 810<->812
+success, 811<->812
+seqid = 812 , minsymbol = 29
+cannot predict! (Not in frequent pattern)
+seqid = 813 , minsymbol = 107
+cannot predict! (Not in frequent pattern)
+fail, 123
+success, 815<->816
+success, 816<->817
+fail, 270
+fail, 135
+fail, 135
+seqid = 820 , minsymbol = 27
+cannot predict! (Not in frequent pattern)
+seqid = 821 , minsymbol = 107
+cannot predict! (Not in frequent pattern)
+fail, 457
+seqid = 823 , minsymbol = 107
+cannot predict! (Not in frequent pattern)
+fail, 457
+seqid = 825 , minsymbol = 11
+cannot predict! (Not in frequent pattern)
+seqid = 826 , minsymbol = 11
+cannot predict! (Not in frequent pattern)
+success, 827<->829
+success, 828<->830
+success, 829<->830
+fail, 148
+fail, 148
+seqid = 832 , minsymbol = 205
+cannot predict! (Not in frequent pattern)
+seqid = 833 , minsymbol = 18
+cannot predict! (Not in frequent pattern)
+seqid = 834 , minsymbol = 18
+cannot predict! (Not in frequent pattern)
+seqid = 835 , minsymbol = 18
+cannot predict! (Not in frequent pattern)
+seqid = 836 , minsymbol = 18
+cannot predict! (Not in frequent pattern)
+seqid = 837 , minsymbol = 18
+cannot predict! (Not in frequent pattern)
+seqid = 838 , minsymbol = 18
+cannot predict! (Not in frequent pattern)
+seqid = 839 , minsymbol = 18
+cannot predict! (Not in frequent pattern)
+seqid = 840 , minsymbol = 18
+cannot predict! (Not in frequent pattern)
+seqid = 841 , minsymbol = 18
+cannot predict! (Not in frequent pattern)
+seqid = 842 , minsymbol = 18
+cannot predict! (Not in frequent pattern)
+seqid = 843 , minsymbol = 18
+cannot predict! (Not in frequent pattern)
+seqid = 844 , minsymbol = 18
+cannot predict! (Not in frequent pattern)
+success, 845<->846
+fail, 181
+847 no sim point!
+848 no sim point!
+849 no sim point!
+seqid = 850 , minsymbol = 118
+cannot predict! (Not in frequent pattern)
+seqid = 851 , minsymbol = 118
+cannot predict! (Not in frequent pattern)
+seqid = 852 , minsymbol = 118
+cannot predict! (Not in frequent pattern)
+seqid = 853 , minsymbol = 118
+cannot predict! (Not in frequent pattern)
+seqid = 854 , minsymbol = 192
+cannot predict! (Not in frequent pattern)
+seqid = 855 , minsymbol = 74
+cannot predict! (Not in frequent pattern)
+seqid = 856 , minsymbol = 192
+cannot predict! (Not in frequent pattern)
+seqid = 857 , minsymbol = 74
+cannot predict! (Not in frequent pattern)
+success, 858<->869
+seqid = 859 , minsymbol = 193
+cannot predict! (Not in frequent pattern)
+success, 860<->869
+success, 861<->869
+seqid = 862 , minsymbol = 193
+cannot predict! (Not in frequent pattern)
+seqid = 863 , minsymbol = 119
+cannot predict! (Not in frequent pattern)
+seqid = 864 , minsymbol = 193
+cannot predict! (Not in frequent pattern)
+seqid = 865 , minsymbol = 119
+cannot predict! (Not in frequent pattern)
+success, 866<->869
+seqid = 867 , minsymbol = 119
+cannot predict! (Not in frequent pattern)
+seqid = 868 , minsymbol = 193
+cannot predict! (Not in frequent pattern)
+seqid = 869 , minsymbol = 119
+cannot predict! (Not in frequent pattern)
+success, 870<->871
+success, 871<->872
+success, 872<->873
+success, 873<->874
+success, 874<->875
+success, 875<->876
+success, 876<->877
+fail, 443
+fail, 439
+fail, 439
+fail, 439
+fail, 439
+seqid = 882 , minsymbol = 184
+cannot predict! (Not in frequent pattern)
+seqid = 883 , minsymbol = 119
+cannot predict! (Not in frequent pattern)
+seqid = 884 , minsymbol = 184
+cannot predict! (Not in frequent pattern)
+seqid = 885 , minsymbol = 119
+cannot predict! (Not in frequent pattern)
+seqid = 886 , minsymbol = 193
+cannot predict! (Not in frequent pattern)
+seqid = 887 , minsymbol = 119
+cannot predict! (Not in frequent pattern)
+seqid = 888 , minsymbol = 184
+cannot predict! (Not in frequent pattern)
+seqid = 889 , minsymbol = 193
+cannot predict! (Not in frequent pattern)
+seqid = 890 , minsymbol = 119
+cannot predict! (Not in frequent pattern)
+seqid = 891 , minsymbol = 184
+cannot predict! (Not in frequent pattern)
+seqid = 892 , minsymbol = 119
+cannot predict! (Not in frequent pattern)
+seqid = 893 , minsymbol = 184
+cannot predict! (Not in frequent pattern)
+seqid = 894 , minsymbol = 136
+cannot predict! (Not in frequent pattern)
+seqid = 895 , minsymbol = 184
+cannot predict! (Not in frequent pattern)
+seqid = 896 , minsymbol = 184
+cannot predict! (Not in frequent pattern)
+seqid = 897 , minsymbol = 118
+cannot predict! (Not in frequent pattern)
+seqid = 898 , minsymbol = 184
+cannot predict! (Not in frequent pattern)
+seqid = 899 , minsymbol = 184
+cannot predict! (Not in frequent pattern)
+seqid = 900 , minsymbol = 184
+cannot predict! (Not in frequent pattern)
+seqid = 901 , minsymbol = 184
+cannot predict! (Not in frequent pattern)
+seqid = 902 , minsymbol = 193
+cannot predict! (Not in frequent pattern)
+seqid = 903 , minsymbol = 184
+cannot predict! (Not in frequent pattern)
+seqid = 904 , minsymbol = 184
+cannot predict! (Not in frequent pattern)
+seqid = 905 , minsymbol = 184
+cannot predict! (Not in frequent pattern)
+seqid = 906 , minsymbol = 119
+cannot predict! (Not in frequent pattern)
+seqid = 907 , minsymbol = 184
+cannot predict! (Not in frequent pattern)
+seqid = 908 , minsymbol = 136
+cannot predict! (Not in frequent pattern)
+fail, 123
+success, 910<->911
+fail, 457
+success, 912<->917
+success, 913<->917
+success, 914<->917
+success, 915<->917
+success, 916<->917
+fail, 148
+fail, 148
+seqid = 919 , minsymbol = 18
+cannot predict! (Not in frequent pattern)
+seqid = 920 , minsymbol = 18
+cannot predict! (Not in frequent pattern)
+seqid = 921 , minsymbol = 18
+cannot predict! (Not in frequent pattern)
+success, 922<->924
+success, 923<->924
+fail, 181
+fail, 181
+fail, 181
+fail, 181
+seqid = 928 , minsymbol = 29
+cannot predict! (Not in frequent pattern)
+seqid = 929 , minsymbol = 107
+cannot predict! (Not in frequent pattern)
+fail, 457
+seqid = 931 , minsymbol = 11
+cannot predict! (Not in frequent pattern)
+fail, 457
+seqid = 933 , minsymbol = 11
+cannot predict! (Not in frequent pattern)
+seqid = 934 , minsymbol = 11
+cannot predict! (Not in frequent pattern)
+seqid = 935 , minsymbol = 34
+cannot predict! (Not in frequent pattern)
+seqid = 936 , minsymbol = 34
+cannot predict! (Not in frequent pattern)
+seqid = 937 , minsymbol = 34
+cannot predict! (Not in frequent pattern)
+seqid = 938 , minsymbol = 34
+cannot predict! (Not in frequent pattern)
+seqid = 939 , minsymbol = 34
+cannot predict! (Not in frequent pattern)
+seqid = 940 , minsymbol = 34
+cannot predict! (Not in frequent pattern)
+seqid = 941 , minsymbol = 34
+cannot predict! (Not in frequent pattern)
+seqid = 942 , minsymbol = 154
+cannot predict! (Not in frequent pattern)
+seqid = 943 , minsymbol = 153
+cannot predict! (Not in frequent pattern)
+seqid = 944 , minsymbol = 111
+cannot predict! (Not in frequent pattern)
+seqid = 945 , minsymbol = 111
+cannot predict! (Not in frequent pattern)
+seqid = 946 , minsymbol = 35
+cannot predict! (Not in frequent pattern)
+seqid = 947 , minsymbol = 36
+cannot predict! (Not in frequent pattern)
+seqid = 948 , minsymbol = 36
+cannot predict! (Not in frequent pattern)
+seqid = 949 , minsymbol = 36
+cannot predict! (Not in frequent pattern)
+950 no sim point!
+success, 951<->952
+seqid = 952 , minsymbol = 27
+cannot predict! (Not in frequent pattern)
+seqid = 953 , minsymbol = 29
+cannot predict! (Not in frequent pattern)
+seqid = 954 , minsymbol = 91
+cannot predict! (Not in frequent pattern)
+seqid = 955 , minsymbol = 91
+cannot predict! (Not in frequent pattern)
+seqid = 956 , minsymbol = 28
+cannot predict! (Not in frequent pattern)
+seqid = 957 , minsymbol = 29
+cannot predict! (Not in frequent pattern)
+seqid = 958 , minsymbol = 29
+cannot predict! (Not in frequent pattern)
+seqid = 959 , minsymbol = 29
+cannot predict! (Not in frequent pattern)
+seqid = 960 , minsymbol = 107
+cannot predict! (Not in frequent pattern)
+fail, 457
+seqid = 962 , minsymbol = 11
+cannot predict! (Not in frequent pattern)
+seqid = 963 , minsymbol = 11
+cannot predict! (Not in frequent pattern)
+seqid = 964 , minsymbol = 11
+cannot predict! (Not in frequent pattern)
+success, 965<->966
+fail, 148
+fail, 148
+seqid = 968 , minsymbol = 18
+cannot predict! (Not in frequent pattern)
+success, 969<->970
+fail, 181
+fail, 181
+fail, 181
+973 no sim point!
+seqid = 974 , minsymbol = 133
+cannot predict! (Not in frequent pattern)
+seqid = 975 , minsymbol = 133
+cannot predict! (Not in frequent pattern)
+fail, 457
+seqid = 977 , minsymbol = 11
+cannot predict! (Not in frequent pattern)
+fail, 135
+fail, 135
+fail, 135
+fail, 135
+seqid = 982 , minsymbol = 27
+cannot predict! (Not in frequent pattern)
+seqid = 983 , minsymbol = 27
+cannot predict! (Not in frequent pattern)
+fail, 457
+success, 985<->986
+fail, 457
+seqid = 987 , minsymbol = 11
+cannot predict! (Not in frequent pattern)
+fail, 457
+fail, 457
+fail, 135
+fail, 135
+fail, 135
+fail, 181
+994 no sim point!
+correct = 55
+fault = 77

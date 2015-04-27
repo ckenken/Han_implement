@@ -1,0 +1,237 @@
+predict 537's next = 0
+select * from sequence30 where seqid > 537
+predict 538's next = 0
+select * from sequence30 where seqid > 538
+predict 539's next = 0
+select * from sequence30 where seqid > 539
+540 cannot predict! (Not in frequent pattern)
+predict 541's next = 11
+select * from sequence30 where seqid > 541
+
+predict 542's next = 0
+select * from sequence30 where seqid > 542
+543 cannot predict! (Not in frequent pattern)
+predict 544's next = 0
+select * from sequence30 where seqid > 544
+predict 545's next = 11
+select * from sequence30 where seqid > 545
+predict 546's next = 0
+select * from sequence30 where seqid > 546
+predict 547's next = 11
+select * from sequence30 where seqid > 547
+predict 548's next = 36
+select * from sequence30 where seqid > 548
+predict 549's next = 14
+select * from sequence30 where seqid > 549
+predict 550's next = 0
+select * from sequence30 where seqid > 550
+predict 551's next = 14
+select * from sequence30 where seqid > 551
+predict 552's next = 14
+select * from sequence30 where seqid > 552
+predict 553's next = 0
+select * from sequence30 where seqid > 553
+predict 554's next = 14
+select * from sequence30 where seqid > 554
+predict 555's next = 0
+select * from sequence30 where seqid > 555
+predict 556's next = 0
+select * from sequence30 where seqid > 556
+predict 557's next = 0
+select * from sequence30 where seqid > 557
+558 cannot predict! (Not in frequent pattern)
+predict 559's next = 11
+select * from sequence30 where seqid > 559
+predict 560's next = 0
+select * from sequence30 where seqid > 560
+561 cannot predict! (Not in frequent pattern)
+562 cannot predict! (Not in frequent pattern)
+563 cannot predict! (Not in frequent pattern)
+564 cannot predict! (Not in frequent pattern)
+565 cannot predict! (Not in frequent pattern)
+566 cannot predict! (Not in frequent pattern)
+567 cannot predict! (Not in frequent pattern)
+predict 568's next = 22
+select * from sequence30 where seqid > 568
+predict 569's next = 0
+select * from sequence30 where seqid > 569
+predict 570's next = 11
+select * from sequence30 where seqid > 570
+predict 571's next = 0
+select * from sequence30 where seqid > 571
+572 cannot predict! (Not in frequent pattern)
+predict 573's next = 0
+select * from sequence30 where seqid > 573
+574 cannot predict! (Not in frequent pattern)
+predict 575's next = 11
+select * from sequence30 where seqid > 575
+predict 576's next = 0
+select * from sequence30 where seqid > 576
+predict 577's next = 47
+select * from sequence30 where seqid > 577
+predict 578's next = 0
+select * from sequence30 where seqid > 578
+predict 579's next = 11
+select * from sequence30 where seqid > 579
+predict 580's next = 0
+select * from sequence30 where seqid > 580
+predict 581's next = 0
+select * from sequence30 where seqid > 581
+predict 582's next = 47
+select * from sequence30 where seqid > 582
+predict 583's next = 0
+select * from sequence30 where seqid > 583
+predict 584's next = 11
+select * from sequence30 where seqid > 584
+585 cannot predict! (Not in frequent pattern)
+586 cannot predict! (Not in frequent pattern)
+587 cannot predict! (Not in frequent pattern)
+588 cannot predict! (Not in frequent pattern)
+predict 589's next = 0
+select * from sequence30 where seqid > 589
+predict 590's next = 11
+select * from sequence30 where seqid > 590
+predict 591's next = 0
+select * from sequence30 where seqid > 591
+592 cannot predict! (Not in frequent pattern)
+593 cannot predict! (Not in frequent pattern)
+594 cannot predict! (Not in frequent pattern)
+595 cannot predict! (Not in frequent pattern)
+596 cannot predict! (Not in frequent pattern)
+597 cannot predict! (Not in frequent pattern)
+598 cannot predict! (Not in frequent pattern)
+599 cannot predict! (Not in frequent pattern)
+600 cannot predict! (Not in frequent pattern)
+601 cannot predict! (Not in frequent pattern)
+602 cannot predict! (Not in frequent pattern)
+603 cannot predict! (Not in frequent pattern)
+604 cannot predict! (Not in frequent pattern)
+605 cannot predict! (Not in frequent pattern)
+606 cannot predict! (Not in frequent pattern)
+predict 607's next = 22
+select * from sequence30 where seqid > 607
+predict 608's next = 0
+select * from sequence30 where seqid > 608
+predict 609's next = 0
+select * from sequence30 where seqid > 609
+predict 610's next = 11
+select * from sequence30 where seqid > 610
+predict 611's next = 0
+select * from sequence30 where seqid > 611
+predict 612's next = 11
+select * from sequence30 where seqid > 612
+predict 613's next = 0
+select * from sequence30 where seqid > 613
+predict 614's next = 11
+select * from sequence30 where seqid > 614
+predict 615's next = 36
+select * from sequence30 where seqid > 615
+predict 616's next = 14
+select * from sequence30 where seqid > 616
+predict 617's next = 0
+select * from sequence30 where seqid > 617
+predict 618's next = 0
+select * from sequence30 where seqid > 618
+predict 619's next = 14
+select * from sequence30 where seqid > 619
+predict 620's next = 0
+select * from sequence30 where seqid > 620
+predict 621's next = 14
+select * from sequence30 where seqid > 621
+predict 622's next = 0
+select * from sequence30 where seqid > 622
+predict 623's next = 11
+select * from sequence30 where seqid > 623
+predict 624's next = 0
+select * from sequence30 where seqid > 624
+625 cannot predict! (Not in frequent pattern)
+predict 626's next = 0
+select * from sequence30 where seqid > 626
+predict 627's next = 11
+select * from sequence30 where seqid > 627
+predict 628's next = 0
+select * from sequence30 where seqid > 628
+predict 629's next = 11
+select * from sequence30 where seqid > 629
+predict 630's next = 36
+select * from sequence30 where seqid > 630
+predict 631's next = 14
+select * from sequence30 where seqid > 631
+predict 632's next = 0
+select * from sequence30 where seqid > 632
+predict 633's next = 0
+select * from sequence30 where seqid > 633
+predict 634's next = 0
+select * from sequence30 where seqid > 634
+predict 635's next = 0
+select * from sequence30 where seqid > 635
+predict 636's next = 0
+select * from sequence30 where seqid > 636
+predict 637's next = 47
+select * from sequence30 where seqid > 637
+predict 638's next = 0
+select * from sequence30 where seqid > 638
+predict 639's next = 0
+select * from sequence30 where seqid > 639
+predict 640's next = 0
+select * from sequence30 where seqid > 640
+predict 641's next = 0
+select * from sequence30 where seqid > 641
+predict 642's next = 0
+select * from sequence30 where seqid > 642
+predict 643's next = 11
+select * from sequence30 where seqid > 643
+predict 644's next = 0
+select * from sequence30 where seqid > 644
+predict 645's next = 11
+select * from sequence30 where seqid > 645
+predict 646's next = 0
+select * from sequence30 where seqid > 646
+predict 647's next = 0
+select * from sequence30 where seqid > 647
+predict 648's next = 0
+select * from sequence30 where seqid > 648
+predict 649's next = 11
+select * from sequence30 where seqid > 649
+predict 650's next = 0
+select * from sequence30 where seqid > 650
+predict 651's next = 0
+select * from sequence30 where seqid > 651
+predict 652's next = 11
+select * from sequence30 where seqid > 652
+predict 653's next = 0
+select * from sequence30 where seqid > 653
+predict 654's next = 14
+select * from sequence30 where seqid > 654
+predict 655's next = 0
+select * from sequence30 where seqid > 655
+predict 656's next = 14
+select * from sequence30 where seqid > 656
+predict 657's next = 0
+select * from sequence30 where seqid > 657
+predict 658's next = 0
+select * from sequence30 where seqid > 658
+predict 659's next = 0
+select * from sequence30 where seqid > 659
+predict 660's next = 0
+select * from sequence30 where seqid > 660
+predict 661's next = 14
+select * from sequence30 where seqid > 661
+predict 662's next = 0
+select * from sequence30 where seqid > 662
+predict 663's next = 14
+select * from sequence30 where seqid > 663
+664 cannot predict! (Not in frequent pattern)
+predict 665's next = 11
+select * from sequence30 where seqid > 665
+666 cannot predict! (Not in frequent pattern)
+predict 667's next = 11
+select * from sequence30 where seqid > 667
+predict 668's next = 0
+select * from sequence30 where seqid > 668
+669 cannot predict! (Not in frequent pattern)
+predict 670's next = 0
+avg = 1.5075478423124489
+correct = 46
+fault = 52
+0.469

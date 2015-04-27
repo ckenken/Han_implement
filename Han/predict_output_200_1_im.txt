@@ -1,0 +1,181 @@
+fail, 12
+fail, 12
+fail, 12
+seqid = 540 , minsymbol = 89
+cannot predict! (Not in frequent pattern)
+success, 541<->542
+success, 542<->545
+seqid = 543 , minsymbol = 139
+cannot predict! (Not in frequent pattern)
+success, 544<->545
+success, 545<->546
+success, 546<->547
+success, 547<->548
+fail, 6
+fail, 6
+fail, 6
+fail, 6
+fail, 6
+success, 553<->559
+seqid = 554 , minsymbol = 21
+cannot predict! (Not in frequent pattern)
+seqid = 555 , minsymbol = 21
+cannot predict! (Not in frequent pattern)
+seqid = 556 , minsymbol = 14
+cannot predict! (Not in frequent pattern)
+seqid = 557 , minsymbol = 14
+cannot predict! (Not in frequent pattern)
+seqid = 558 , minsymbol = 21
+cannot predict! (Not in frequent pattern)
+seqid = 559 , minsymbol = 35
+cannot predict! (Not in frequent pattern)
+seqid = 560 , minsymbol = 35
+cannot predict! (Not in frequent pattern)
+seqid = 561 , minsymbol = 37
+cannot predict! (Not in frequent pattern)
+seqid = 562 , minsymbol = 37
+cannot predict! (Not in frequent pattern)
+seqid = 563 , minsymbol = 37
+cannot predict! (Not in frequent pattern)
+seqid = 564 , minsymbol = 37
+cannot predict! (Not in frequent pattern)
+seqid = 565 , minsymbol = 37
+cannot predict! (Not in frequent pattern)
+seqid = 566 , minsymbol = 103
+cannot predict! (Not in frequent pattern)
+seqid = 567 , minsymbol = 125
+cannot predict! (Not in frequent pattern)
+seqid = 568 , minsymbol = 104
+cannot predict! (Not in frequent pattern)
+seqid = 569 , minsymbol = 72
+cannot predict! (Not in frequent pattern)
+success, 570<->571
+success, 571<->575
+seqid = 572 , minsymbol = 104
+cannot predict! (Not in frequent pattern)
+success, 573<->575
+seqid = 574 , minsymbol = 99
+cannot predict! (Not in frequent pattern)
+fail, 1
+seqid = 576 , minsymbol = 32
+cannot predict! (Not in frequent pattern)
+seqid = 577 , minsymbol = 14
+cannot predict! (Not in frequent pattern)
+seqid = 578 , minsymbol = 14
+cannot predict! (Not in frequent pattern)
+fail, 13
+seqid = 580 , minsymbol = 57
+cannot predict! (Not in frequent pattern)
+fail, 0
+fail, 0
+seqid = 583 , minsymbol = 124
+cannot predict! (Not in frequent pattern)
+fail, 1
+seqid = 585 , minsymbol = 96
+cannot predict! (Not in frequent pattern)
+586 no sim point!
+587 no sim point!
+seqid = 588 , minsymbol = 96
+cannot predict! (Not in frequent pattern)
+fail, 1
+fail, 1
+seqid = 591 , minsymbol = 32
+cannot predict! (Not in frequent pattern)
+592 no sim point!
+593 no sim point!
+594 no sim point!
+595 no sim point!
+596 no sim point!
+597 no sim point!
+598 no sim point!
+599 no sim point!
+600 no sim point!
+601 no sim point!
+602 no sim point!
+603 no sim point!
+604 no sim point!
+605 no sim point!
+seqid = 606 , minsymbol = 96
+cannot predict! (Not in frequent pattern)
+seqid = 607 , minsymbol = 120
+cannot predict! (Not in frequent pattern)
+seqid = 608 , minsymbol = 119
+cannot predict! (Not in frequent pattern)
+seqid = 609 , minsymbol = 119
+cannot predict! (Not in frequent pattern)
+fail, 13
+seqid = 611 , minsymbol = 116
+cannot predict! (Not in frequent pattern)
+success, 612<->613
+success, 613<->614
+success, 614<->615
+success, 615<->618
+success, 616<->618
+success, 617<->618
+success, 618<->627
+success, 619<->627
+success, 620<->627
+success, 621<->627
+success, 622<->627
+success, 623<->624
+success, 624<->627
+seqid = 625 , minsymbol = 139
+cannot predict! (Not in frequent pattern)
+success, 626<->627
+success, 627<->628
+success, 628<->629
+success, 629<->630
+fail, 6
+fail, 6
+fail, 6
+fail, 12
+seqid = 634 , minsymbol = 23
+cannot predict! (Not in frequent pattern)
+seqid = 635 , minsymbol = 23
+cannot predict! (Not in frequent pattern)
+fail, 12
+success, 637<->645
+success, 638<->645
+seqid = 639 , minsymbol = 71
+cannot predict! (Not in frequent pattern)
+seqid = 640 , minsymbol = 71
+cannot predict! (Not in frequent pattern)
+seqid = 641 , minsymbol = 72
+cannot predict! (Not in frequent pattern)
+seqid = 642 , minsymbol = 72
+cannot predict! (Not in frequent pattern)
+success, 643<->644
+success, 644<->645
+fail, 13
+fail, 0
+success, 647<->649
+seqid = 648 , minsymbol = 52
+cannot predict! (Not in frequent pattern)
+success, 649<->651
+seqid = 650 , minsymbol = 1
+cannot predict! (Not in frequent pattern)
+success, 651<->652
+success, 652<->653
+fail, 6
+fail, 6
+fail, 6
+fail, 6
+seqid = 657 , minsymbol = 27
+cannot predict! (Not in frequent pattern)
+fail, 12
+fail, 12
+fail, 12
+fail, 12
+fail, 12
+fail, 12
+fail, 12
+success, 665<->668
+seqid = 666 , minsymbol = 104
+cannot predict! (Not in frequent pattern)
+success, 667<->668
+fail, 12
+seqid = 669 , minsymbol = 139
+cannot predict! (Not in frequent pattern)
+correct = 37
+fault = 35
+0.51
