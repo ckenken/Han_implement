@@ -41,7 +41,7 @@ public class Same {
 	
 	public static void main(String [] args) throws IOException, SQLException, ParseException, JSONException 
 	{
-//		File f = new File("same20-5-history2-2.txt");
+//		File f = new File("same20-5-poly.txt");
 //		
 //		FileInputStream FIS = new FileInputStream(f);
 //		
@@ -67,7 +67,7 @@ public class Same {
 //			System.out.println(line);
 //		}
 //		BR.close();
-//		
+		
 		
 //		File f2 = new File("same_all0_20-5.txt");
 //		
@@ -96,8 +96,8 @@ public class Same {
 //		
 	
 //		insertSames();
-	
-		find_G_center();
+//		find_G_center();
+		
 //		write_G_center();
 //		
 //		clusterSameNoCate();
@@ -167,7 +167,7 @@ public class Same {
 				
 				NewPoint c = new NewPoint(d, centerLat, centerLng);
 				
-			//	System.out.println("lat,lng: " + centerLat + "," + centerLng);
+				System.out.println("same = " + i + ": lat,lng: " + centerLat + "," + centerLng);
 				
 				insertSameSQL_google(i, c);
 			}
@@ -313,7 +313,7 @@ public class Same {
 		
 		System.out.println(p.getLat() + "," + p.getLng());
 		
-			String url = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=" + p.getLat() + "," + p.getLng() + "&radius=200&sensor=false&key=AIzaSyDk43SMQqkeCkvsJYfwZs-FI36I2nnBYQY";
+		String url = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=" + p.getLat() + "," + p.getLng() + "&radius=200&sensor=false&key=AIzaSyDk43SMQqkeCkvsJYfwZs-FI36I2nnBYQY";
 		
 	//	String url = "https://api.foursquare.com/v2/venues/search?limit=30&ll=" + p.getLat() + "," + p.getLng() + "&client_id=BXTCY4HGTLWINDPRLFXCOWRUEDAJC12ZHEGDTGX4A5DX413K&client_secret=X20DAZW4CXKKC2V1O4QXYYHEQ1T5BMIBHUYD5ZJOVUKGFD3V&v=20140728";
 
@@ -338,7 +338,7 @@ public class Same {
 			e.printStackTrace();
 		}
 		
-		System.out.println(responseString);
+//		System.out.println(responseString);
 		
 		JSONObject json = new JSONObject(responseString);
 		
@@ -373,13 +373,16 @@ public class Same {
 		
 			String sql = "insert into same values(" + id + "," + p.getLat() + "," + p.getLng() + "," + 0 + ",'" + categories.get(0).category + "," + categories.get(1).category + "',0,0)";
 		
-	//		jdbc.insertQuery(sql);
+			jdbc.insertQuery(sql);
 			
+			System.out.println(sql);
 		}
 		else if (categories.size() == 1) {
 			
 			String sql = "insert into same values(" + id + "," + p.getLat() + "," + p.getLng() + "," + 0 + ",'colloquial_area,political',0,0)";
 			jdbc.insertQuery(sql);
+			
+			System.out.println(sql);
 		}
 	}
 	
@@ -419,7 +422,7 @@ public class Same {
 		
 		k.extractCluster();
 		
-		k.displayCluster("history2-1-G-cluster_im.txt");
+		k.displayCluster("poly_im_-G-cluster_im.txt");
 		
 	}
 	
@@ -427,7 +430,7 @@ public class Same {
 	{
 		JDBC jdbc = new JDBC("han");
 		
-		File f = new File("history2-1-G-cluster_im.txt");
+		File f = new File("poly_im_-G-cluster_im.txt");
 		
 		FileInputStream FIS = new FileInputStream(f);
 		

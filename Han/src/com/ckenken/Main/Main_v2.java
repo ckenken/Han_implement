@@ -28,7 +28,7 @@ public class Main_v2 {
 	
 	public static final int SIGMA = 15;
 	public static final int DT = 3600000;
-	public static final int MAX_POINT_NUM = 175;  // 0~117
+	public static final int MAX_POINT_NUM = 110;  // 0~117
 	
 	public static int [][] distribution;
 	
@@ -54,7 +54,7 @@ public class Main_v2 {
 
 		JDBC jdbc = new JDBC("han");
 		
-		String sql = "select max(g) from sequence30_training";
+		String sql = "select max(g) from sequence30";
 		
 		ResultSet rs = jdbc.query(sql);
 		
@@ -114,7 +114,7 @@ public class Main_v2 {
 //			display_extended.get(i).show();
 //		}
 //		
-		for(int k = 3; k<10; k++) {
+		for(int k = 3; k<5; k++) {
 			
 			System.out.println("============== length = " + k + " ====================");
 			counter = 0;
@@ -255,7 +255,7 @@ public class Main_v2 {
 		ArrayList<Sequence> origin = new ArrayList<Sequence>();
 		
 		JDBC jdbc = new JDBC("han");
-		String sql = "select * from sequence30_training";
+		String sql = "select * from sequence30";
 		
 		ResultSet rs = jdbc.query(sql);
 		

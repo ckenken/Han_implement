@@ -212,7 +212,7 @@ public class DataPoint {
 			return false;
 	}
 	
-	public static double similarity(DataPoint a, DataPoint b) 
+	public static double similarity_KL(DataPoint a, DataPoint b) 
 	{
 		double tsum1 = 0.0;
 		// time distance
@@ -297,7 +297,7 @@ public class DataPoint {
 		if(a.G == b.G)
 			return (0.6 * timeDis + 0.4 * gDis) * 2;
 		else 
-			return 9999;
+			return IM_Main.NOT_SIM;
 	}
 	
 	public static DataPoint merge(DataPoint a, DataPoint b)
@@ -427,6 +427,100 @@ public class DataPoint {
 			String [] SP2 = SP[i].split(":");
 			this.gDistribution[i] = Double.parseDouble(SP2[1]);			
 		}
+	}	
+	
+	public static double similarity_cos(DataPoint a, DataPoint b)
+	{
+
+		double timeScore = time_cos(a,b);
+		double gScore = semantic_cos(a,b);
+		int sScore = 0;
+		
+		if (a.G == b.G) {
+			sScore = 1;
+		}
+		
+		double sim = IM_Main.NOT_SIM;
+		
+		if(timeScore >= IM_Main.TIME_THRESHOLD && gScore >= IM_Main.SEMANTIC_THRESHOLD && sScore >= IM_Main.S_THRESHOLD) {
+			sim = (IM_Main.ALPHA * sScore) + (IM_Main.BETA * timeScore) + (IM_Main.GAMA * gScore);
+			
+			return sim;
+		}
+		else 		
+			return IM_Main.NOT_SIM;
+		
+	}
+	
+	
+	public static double time_cos(DataPoint a, DataPoint b)
+	{
+		
+		double timeSum = 0.0;
+		double a_length = 0.0;
+		double b_length = 0.0;
+		
+		for(int i = 0; i<24; i++) {	
+			timeSum += a.timeDistribution[i] * b.timeDistribution[i];
+			a_length += a.timeDistribution[i] * a.timeDistribution[i];
+			b_length += b.timeDistribution[i] * b.timeDistribution[i];
+		}
+		
+		a_length = Math.sqrt(a_length);
+		b_length = Math.sqrt(b_length);		
+
+		double score = timeSum / ((a_length) * (b_length));
+		
+		return score;
+	}
+	
+	public static double semantic_cos(DataPoint a, DataPoint b)
+	{
+		
+		double gSum = 0.0;
+		double a_length = 0.0;
+		double b_length = 0.0;
+		
+		for(int i = 0; i<MAX_G_NUMBER; i++) {	
+			gSum += a.gDistribution[i] * b.gDistribution[i];
+			a_length += a.gDistribution[i] * a.gDistribution[i];
+			b_length += b.gDistribution[i] * b.gDistribution[i];
+		}
+		
+		a_length = Math.sqrt(a_length);
+		b_length = Math.sqrt(b_length);		
+
+		double score = gSum / ((a_length) * (b_length));
+		
+		return score;
+	}
+	
+	public static boolean checkSemanticOverlap(DataPoint a, DataPoint b)
+	{
+		boolean flag = false;
+		
+		for(int i = 0; i<a.gCounter.length; i++) {
+			if (a.gCounter[i] > 0.0 && b.gCounter[i] > 0.0) {
+				flag = true;
+				break;
+			}
+		}
+		
+		return flag;
+	}
+
+	public static boolean checkTimeOverlap(DataPoint a, DataPoint b)
+	{
+		boolean flag = false;
+		
+		for(int i = 0; i<a.timeDistribution.length; i++) {
+			if (a.timeDistribution[i] > 0.0 && b.timeDistribution[i] > 0.0) {
+				flag = true;
+				break;
+			}
+		}
+		
+		return flag;
 	}	
 	
 }

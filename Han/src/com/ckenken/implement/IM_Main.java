@@ -16,13 +16,22 @@ import com.ckenken.storage.Coarse_pattern;
 
 public class IM_Main {
 	
-	private static final String OUTPUT = "IM_DEBUG.txt";  
+	private static final String OUTPUT = "new_IM_DEBUG.txt";  
 	public static final int DT = 3600000;
-	public static final int LENGTH = 8;
-	public static final int SIGMA = 15;
+	public static final int LENGTH = 4;
+	public static final int SIGMA = 3;
 	public static final int NOT_SIM = 9999;
+	public static final double IS_SIM = 0.001;
 	
 	public static double SIM_THRESHOLD = 3.0;
+	
+	public static double TIME_THRESHOLD = 0.3;
+	public static double SEMANTIC_THRESHOLD = 0;
+	public static int S_THRESHOLD = 1;
+	
+	public static double ALPHA = 0.4;
+	public static double BETA = 0.3;
+	public static double GAMA = 0.3;
 	
 	public static void main(String args []) throws SQLException, ParseException, FileNotFoundException
 	{
@@ -36,6 +45,9 @@ public class IM_Main {
 		ResultSet rs = jdbc.query(sql);
 		
 		ArrayList<DataPoint> datas = new ArrayList<DataPoint>();
+
+		double RunStartTime = 0, RunEndTime = 0, totTime = 0;
+		RunStartTime = System.currentTimeMillis();		
 		
 //		while(rs.next()) {
 //			int seqid = rs.getInt("seqid");
@@ -62,10 +74,14 @@ public class IM_Main {
 //					DataPoint a = datas.get(i);
 //					DataPoint b = datas.get(j);
 //					
-//					double point = DataPoint.similarity(a, b);
+//					double point = DataPoint.similarity_cos(a, b);
+////					System.out.println("point = " + point);
+////					System.out.println(i + "->" + j + ": time:" + DataPoint.time_cos(a, b) + ", g: " + DataPoint.semantic_cos(a, b));
 //					
 //					if(point != NOT_SIM && point < SIM_THRESHOLD) {
-//						System.out.println(i + "->" + j + ": " + point);
+////						System.out.println(i + "->" + j + ": " + point);
+//						
+//						point = 1.0-point;
 //						
 //						if(point < min) {
 //							min = point;
@@ -94,9 +110,13 @@ public class IM_Main {
 //							continue;
 //						}
 //						
-//						double score = DataPoint.similarity(a, b);
+//						double score = DataPoint.similarity_cos(a, b);
+//						
+////						System.out.println("score = " + score);
 //						
 //						if(score != NOT_SIM && score < SIM_THRESHOLD) {
+//							
+//							score = 1.0-score;
 //							
 //							if(score < min) {
 //								min = score;
@@ -151,7 +171,7 @@ public class IM_Main {
 //		for(int i = 0; i<datas.size(); i++) {
 //			System.out.println(datas.get(i).seqid + ": " + datas.get(i).symbol);
 //			
-//			sql = "update sequence30 set symbol = " + datas.get(i).symbol + " where seqid = " + datas.get(i).seqid;
+//			sql = "update sequence30_training set symbol = " + datas.get(i).symbol + " where seqid = " + datas.get(i).seqid;
 //			jdbc.insertQuery(sql);
 //			
 //		}
@@ -174,15 +194,26 @@ public class IM_Main {
 //			
 //			String gD = SB.toString();
 //			
-//			sql = "insert into prefixcenter values(" + d.symbol + "," + d.lat + "," + d.lng + ",'" + gD + "','" + timeD + "')";
 //			
-//		//	sql = "update prefixCenter_training set timeDistribution='" + timeD + "', gDistribution='" + gD +"' where symbolid=" + d.symbol;
+//			sql = "select * from prefixcenter_training where symbolid = " + d.symbol;
+//			
+//			ResultSet rs2 = jdbc.query(sql);
+//			
+//			if (rs2.next()) {
+//				sql = "update prefixCenter_training set timeDistribution='" + timeD + "', gDistribution='" + gD +"' where symbolid=" + d.symbol;		
+//			}
+//			else {
+//				sql = "insert into prefixcenter_training values(" + d.symbol + "," + d.lat + "," + d.lng + ",'" + gD + "','" + timeD + "')";
+//			}
 //			
 //			jdbc.insertQuery(sql);
-//
 //		}
-
-		////
+//
+//		////
+//		
+//		MergeNeighbor.main(args);
+//		
+//		////
 		
 		sql = "select * from merged_sequence30_training";
 		
@@ -243,8 +274,8 @@ public class IM_Main {
 		
 		//DataPoint.max_symbol = 315;
 				
-		double startTime = 0,endTime = 0, totTime = 0;
-		startTime = System.currentTimeMillis();
+//		double RunStartTime = 0,endTime = 0, totTime = 0;
+//		RunStartTime = System.currentTimeMillis();
 		
 		ArrayList<ArrayList<Integer>> old_symbol_sequence = new ArrayList<ArrayList<Integer>>();
 		ArrayList<ArrayList<Integer>> new_symbol_sequence = new ArrayList<ArrayList<Integer>>();
@@ -325,9 +356,9 @@ public class IM_Main {
 			
 		}
 		
-		endTime = System.currentTimeMillis();
+		RunEndTime = System.currentTimeMillis();
 		
-		totTime = endTime - startTime;		
+		totTime = RunEndTime - RunStartTime;		
 		
 		System.out.println("time = " + totTime + "ms");
 		

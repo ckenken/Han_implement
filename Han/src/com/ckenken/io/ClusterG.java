@@ -39,8 +39,10 @@ public class ClusterG {
 //			
 //			System.out.println("=================");
 //		}
-		parseSameG();
-//		fillCateG();
+//		
+//		parseSameG();
+		fillCateG();
+		
 	}
 	
 	public static void runClusterG(String category) throws SQLException, IOException

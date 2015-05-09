@@ -27,7 +27,7 @@ public class UseOptics {
 
 		KML kml = new KML();
 		
-		File folder = new File("hyear");
+		File folder = new File("poly");
 		
 		Map<Long, Point> result = new HashMap<Long, Point>();
 		int sum = 0;
@@ -125,7 +125,7 @@ public class UseOptics {
 		
 		k.extractCluster();
 		
-		k.displayCluster("same20-5-history2-2.txt");
+		k.displayCluster("same20-5-poly.txt");
 	//	System.out.println(k.clusterOrder.get(0).ckTime);
 		
 		for(int i = 0;i<k.clusterOrder.size(); i++) {

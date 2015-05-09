@@ -28,6 +28,7 @@ public class PredictByHan {
 		
 		ArrayList<DataPoint> datas = new ArrayList<DataPoint>();
 		
+
 		while(rs.next()) {
 			int seqid = rs.getInt("seqid");
 			int sameid = rs.getInt("sameid");	
@@ -45,7 +46,7 @@ public class PredictByHan {
 			datas.add(temp);
 		}
 		
-		sql = "select * from sequence30 where seqid > 800";
+		sql = "select * from sequence30 where seqid > 900";
 		
 		rs = jdbc.query(sql);
 		
@@ -69,7 +70,9 @@ public class PredictByHan {
 			
 	//		System.out.println(temp.seqid + "'s most sim point = " + datas.get(minI).seqid + ", symbol = "+ datas.get(minI).symbol + ", sim = " + min);
 			
-			sql = "select * from coarse order by wightsum desc";
+			System.gc();
+			
+			sql = "select * from coarse order by wightsum desc limit 3000";
 			
 			ResultSet rs2 = jdbc.query(sql);
 			
@@ -154,10 +157,10 @@ public class PredictByHan {
 							System.out.println();
 							
 						}
-						if (DataPoint.similarity(comp, matched_point) <= IM_Main.SIM_THRESHOLD) {
+						if (DataPoint.similarity_cos(comp, matched_point) <= IM_Main.SIM_THRESHOLD) {
 							correct++;
 							flag = true;
-							sum += DataPoint.similarity(comp, matched_point);
+							sum += DataPoint.similarity_cos(comp, matched_point);
 							break;
 						}
 						

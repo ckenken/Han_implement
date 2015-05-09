@@ -14,7 +14,7 @@ public class MergeNeighbor {
 		
 		JDBC jdbc = new JDBC("han");
 		
-		String sql = "select * from sequence30";
+		String sql = "select * from sequence30_training";
 		
 		ResultSet rs = jdbc.query(sql);
 		
@@ -51,7 +51,7 @@ public class MergeNeighbor {
 			if(previous.symbol != temp.symbol) {
 				
 		//		JDBC jdbc2 = new JDBC("history4");
-				sql = "insert into merged_sequence30 values(" + previous.seqid +  "," + previous.sameid + "," + previous.lat + "," + previous.lng + "," + previous.G + ",'" + previous.cate + "','" +  Main_v2.sdFormat.format(previous.startTime) +  "','" +  Main_v2.sdFormat.format(previous.endTime) + "'," + previous.symbol + ")";				
+				sql = "insert into merged_sequence30_training values(" + previous.seqid +  "," + previous.sameid + "," + previous.lat + "," + previous.lng + "," + previous.G + ",'" + previous.cate + "','" +  Main_v2.sdFormat.format(previous.startTime) +  "','" +  Main_v2.sdFormat.format(previous.endTime) + "'," + previous.symbol + ")";				
 		
 		//		System.out.println(sql);
 				

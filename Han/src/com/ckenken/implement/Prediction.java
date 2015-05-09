@@ -14,7 +14,7 @@ import com.ckenken.io.JDBC;
 
 public class Prediction {
 	
-	private static final String OUTPUT = "predict_output_han_im.txt";  
+	private static final String OUTPUT = "new_predict_output_han_im.txt";  
 	
 	public static void main(String[] args) throws SQLException, ParseException, FileNotFoundException {
 		
@@ -69,7 +69,10 @@ public class Prediction {
 			double min = 20000000.0;
 			int minI = -1;
 			for(int i = 0; i<datas.size(); i++) {
-				double score = DataPoint.similarity(datas.get(i), temp);
+				double score = DataPoint.similarity_cos(datas.get(i), temp);
+				
+				if (score != IM_Main.NOT_SIM)
+					score = 1-score;
 				
 				if(score != IM_Main.NOT_SIM && score < min) {
 					minI = i;
@@ -87,7 +90,7 @@ public class Prediction {
 			
 			System.gc();
 			
-			sql = "select * from datapattern_training order by frequent desc";
+			sql = "select * from datapattern_training order by frequent desc limit 5000";
 			
 			ResultSet rs2 = jdbc.query(sql);
 			
@@ -170,7 +173,7 @@ public class Prediction {
 		//				System.out.println(comp.symbol + ": " + comp.seqid + "<->" + matched_point.seqid + " : " + DataPoint.similarity(comp, matched_point));
 						
 						
-						if (DataPoint.similarity(comp, matched_point) <= IM_Main.SIM_THRESHOLD) {
+						if (DataPoint.similarity_cos(comp, matched_point) <= IM_Main.SIM_THRESHOLD) {
 							System.out.println("success, "+ temp.seqid + "<->" + matched_point.seqid);
 							correct++;
 							flag = true;	
