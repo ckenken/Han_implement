@@ -39,9 +39,9 @@ public class ClusterG {
 //			
 //			System.out.println("=================");
 //		}
-//		
+		
 //		parseSameG();
-		fillCateG();
+//		fillCateG();
 		
 	}
 	

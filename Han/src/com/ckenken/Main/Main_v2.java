@@ -26,9 +26,9 @@ public class Main_v2 {
 	
 	static private final String OUTPUT = "output_3600_10.txt";  
 	
-	public static final int SIGMA = 15;
+	public static final int SIGMA = 10;
 	public static final int DT = 3600000;
-	public static final int MAX_POINT_NUM = 110;  // 0~117
+	public static final int MAX_POINT_NUM = 114;  // 0~117
 	
 	public static int [][] distribution;
 	

@@ -13,5 +13,7 @@
 	<classpathentry kind="lib" path="jar/httpcore-4.3.3.jar"/>
 	<classpathentry kind="lib" path="jar/httpmime-4.3.6.jar"/>
 	<classpathentry kind="lib" path="jar/org.json-20120521.jar"/>
+	<classpathentry kind="lib" path="jar/java-lsh-0.4.jar"/>
+	<classpathentry kind="lib" path="jar/TarsosLSH-0.7.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

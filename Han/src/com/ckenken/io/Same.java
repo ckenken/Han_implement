@@ -33,6 +33,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import com.ckenken.Main.Main;
+import com.ckenken.implement.storage.Google_Cate_List;
 import com.ckenken.storage.Category;
 import com.ckenken.storage.NewPoint;
 
@@ -41,7 +42,7 @@ public class Same {
 	
 	public static void main(String [] args) throws IOException, SQLException, ParseException, JSONException 
 	{
-//		File f = new File("same20-5-poly.txt");
+//		File f = new File("same20-5-April.txt");
 //		
 //		FileInputStream FIS = new FileInputStream(f);
 //		
@@ -131,7 +132,7 @@ public class Same {
 		return result;
 	}
 	
-	public static void insertSames() throws SQLException, ParseException, JSONException
+	public static void insertSames() throws SQLException, ParseException, JSONException, IOException
 	{
 		JDBC jdbc = new JDBC("han");
 		
@@ -306,7 +307,7 @@ public class Same {
 		FW.close();
 	}
 
-	public static void insertSameSQL_google(int id, NewPoint p) throws SQLException, JSONException {
+	public static void insertSameSQL_google(int id, NewPoint p) throws SQLException, JSONException, IOException {
 		
 		@SuppressWarnings({ "resource", "deprecation" })
 		DefaultHttpClient client = new DefaultHttpClient();
@@ -358,6 +359,14 @@ public class Same {
 			
 		//	System.out.println(c.category);
 			
+			if (c.category.equals("colloquial_area")) {
+				continue;
+			}
+			
+			Google_Cate_List google = new Google_Cate_List();
+			
+			c.category = google.cateParent.get(c.category);
+			
 			categories.add(c);
 		}	
 		
@@ -370,16 +379,26 @@ public class Same {
 		JDBC jdbc = new JDBC("han");
 		
 		if(categories.size() >=2) {
-		
-			String sql = "insert into same values(" + id + "," + p.getLat() + "," + p.getLng() + "," + 0 + ",'" + categories.get(0).category + "," + categories.get(1).category + "',0,0)";
+			StringBuilder SB = new StringBuilder();
+			
+			for(int i = 0; i<categories.size() && i<5; i++) {
+				if (i == 0) {
+					SB.append(categories.get(i).category);
+				}
+				else {
+					SB.append("," + categories.get(i).category);
+				} 
+			}
+			
+			String sql = "insert into same values(" + id + "," + p.getLat() + "," + p.getLng() + "," + 0 + ",'" + SB.toString() + "',0,0)";
 		
 			jdbc.insertQuery(sql);
 			
 			System.out.println(sql);
 		}
-		else if (categories.size() == 1) {
+		else if (categories.size() <= 1) {
 			
-			String sql = "insert into same values(" + id + "," + p.getLat() + "," + p.getLng() + "," + 0 + ",'colloquial_area,political',0,0)";
+			String sql = "insert into same values(" + id + "," + p.getLat() + "," + p.getLng() + "," + 0 + ",'Others,Others',0,0)";
 			jdbc.insertQuery(sql);
 			
 			System.out.println(sql);
@@ -412,7 +431,7 @@ public class Same {
 		
 		OPTICS k = new OPTICS();
 		
-		k.setParameter(0, 200, 1);
+		k.setParameter(0, 500, 1);
 			
 		k.pts = result;
 		
