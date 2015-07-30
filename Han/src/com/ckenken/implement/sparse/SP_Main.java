@@ -31,116 +31,116 @@ public class SP_Main {
 		double RunStartTime = 0, RunEndTime = 0, totTime = 0;
 		RunStartTime = System.currentTimeMillis();		
 		
-		while(rs.next()) {
-			int seqid = rs.getInt("seqid");
-			int sameid = rs.getInt("sameid");
-			double lat = rs.getDouble("lat");
-			double lng = rs.getDouble("lng");
-			int G = rs.getInt("G");
-			String cate = rs.getString("cate");
-			String startTime = rs.getString("time");
-			String endTime = rs.getString("endtime");
-			
-			DataPoint temp = new DataPoint(seqid,sameid, lat, lng, G, cate, startTime, endTime);
-			
-			temp.symbol = rs.getInt("symbol");
-			
-			datas.add(temp);
-		}		
-		
-		HashMap<Integer, Integer> map = IndexSymbol.symbolizeByHotRegion(datas, IndexSymbol.SS);
-		
-		for(int i = 0; i<datas.size(); i++) {
-			datas.get(i).symbol = map.get(datas.get(i).seqid);
-		}
-		
-		for(int i = 0; i<datas.size(); i++) {
-		//	System.out.println(datas.get(i).seqid + ": " + datas.get(i).symbol);
-			
-			sql = "update sequence22 set symbol = " + datas.get(i).symbol + " where seqid = " + datas.get(i).seqid;
-			jdbc.insertQuery(sql);	
-		}
-		
-		///////// merged HASH ////////
-		
-		sql = "select max(symbol) from sequence22";
-		
-		rs = jdbc.query(sql);
-		
-		rs.next();
-		
-		int max_symbolid = rs.getInt("max(symbol)");
-		
-		for(int i = 0; i<=max_symbolid; i++) {
-			DataPoint temp = new DataPoint();
-			boolean flag = false;
-			
-			for(int j = 0; j<datas.size(); j++) {
-				if (datas.get(j).symbol == i) {
-					temp = DataPoint.copy(datas.get(j));
-					flag = true;
-					break;
-				}
-			}
-			if (flag == false)
-				continue;
-			
-			for(int j = 0; j<datas.size(); j++) {
-				if (datas.get(j).symbol == i) {
-					temp = DataPoint.merge(temp, datas.get(j));
-				}
-			}
-			
-			for(int j = 0; j<datas.size(); j++) {
-				if (datas.get(j).symbol == i) {
-					datas.get(j).copyDistribution(temp);
-					datas.get(j).copyLatLng(temp);
-				}
-			}
-		}
-		
-		/////////////////////////////
-		
-		for(int i = 0; i<datas.size(); i++) {
-			DataPoint d = datas.get(i);
-			
-			StringBuilder SB = new StringBuilder();
-			for(int j = 0; j<24; j++) {
-				SB.append(j + ":" + d.timeDistribution[j] + "\n");
-			}
-			
-			String timeD = SB.toString();
-			
-			SB = new StringBuilder();
-			
-			for(int j = 0; j<d.gDistribution.length; j++) {
-				SB.append(j + ":" + d.gDistribution[j] + "\n");
-			}			
-			
-			String gD = SB.toString();
-			
-			
-			sql = "select * from prefixcenter where symbolid = " + d.symbol;
-			
-			ResultSet rs2 = jdbc.query(sql);
-			
-			if (rs2.next()) {
-				sql = "update prefixCenter set timeDistribution='" + timeD + "', gDistribution='" + gD +"' where symbolid=" + d.symbol;		
-			}
-			else {
-				sql = "insert into prefixcenter values(" + d.symbol + "," + d.lat + "," + d.lng + ",'" + gD + "','" + timeD + "')";
-			}
-			
-			jdbc.insertQuery(sql);
-		}
-
-		
-		RunEndTime = System.currentTimeMillis();
-		
-		totTime = RunEndTime - RunStartTime;		
-		
-		System.out.println("time = " + totTime + "ms");
-		
+//		while(rs.next()) {
+//			int seqid = rs.getInt("seqid");
+//			int sameid = rs.getInt("sameid");
+//			double lat = rs.getDouble("lat");
+//			double lng = rs.getDouble("lng");
+//			int G = rs.getInt("G");
+//			String cate = rs.getString("cate");
+//			String startTime = rs.getString("time");
+//			String endTime = rs.getString("endtime");
+//			
+//			DataPoint temp = new DataPoint(seqid,sameid, lat, lng, G, cate, startTime, endTime);
+//			
+//			temp.symbol = rs.getInt("symbol");
+//			
+//			datas.add(temp);
+//		}		
+//		
+//		HashMap<Integer, Integer> map = IndexSymbol.symbolizeByHotRegion(datas, IndexSymbol.SS);
+//		
+//		for(int i = 0; i<datas.size(); i++) {
+//			datas.get(i).symbol = map.get(datas.get(i).seqid);
+//		}
+//		
+//		for(int i = 0; i<datas.size(); i++) {
+//		//	System.out.println(datas.get(i).seqid + ": " + datas.get(i).symbol);
+//			
+//			sql = "update sequence22 set symbol = " + datas.get(i).symbol + " where seqid = " + datas.get(i).seqid;
+//			jdbc.insertQuery(sql);	
+//		}
+//		
+//		///////// merged HASH ////////
+//		
+//		sql = "select max(symbol) from sequence22";
+//		
+//		rs = jdbc.query(sql);
+//		
+//		rs.next();
+//		
+//		int max_symbolid = rs.getInt("max(symbol)");
+//		
+//		for(int i = 0; i<=max_symbolid; i++) {
+//			DataPoint temp = new DataPoint();
+//			boolean flag = false;
+//			
+//			for(int j = 0; j<datas.size(); j++) {
+//				if (datas.get(j).symbol == i) {
+//					temp = DataPoint.copy(datas.get(j));
+//					flag = true;
+//					break;
+//				}
+//			}
+//			if (flag == false)
+//				continue;
+//			
+//			for(int j = 0; j<datas.size(); j++) {
+//				if (datas.get(j).symbol == i) {
+//					temp = DataPoint.merge(temp, datas.get(j));
+//				}
+//			}
+//			
+//			for(int j = 0; j<datas.size(); j++) {
+//				if (datas.get(j).symbol == i) {
+//					datas.get(j).copyDistribution(temp);
+//					datas.get(j).copyLatLng(temp);
+//				}
+//			}
+//		}
+//		
+//		/////////////////////////////
+//		
+//		for(int i = 0; i<datas.size(); i++) {
+//			DataPoint d = datas.get(i);
+//			
+//			StringBuilder SB = new StringBuilder();
+//			for(int j = 0; j<24; j++) {
+//				SB.append(j + ":" + d.timeDistribution[j] + "\n");
+//			}
+//			
+//			String timeD = SB.toString();
+//			
+//			SB = new StringBuilder();
+//			
+//			for(int j = 0; j<d.gDistribution.length; j++) {
+//				SB.append(j + ":" + d.gDistribution[j] + "\n");
+//			}			
+//			
+//			String gD = SB.toString();
+//			
+//			
+//			sql = "select * from prefixcenter where symbolid = " + d.symbol;
+//			
+//			ResultSet rs2 = jdbc.query(sql);
+//			
+//			if (rs2.next()) {
+//				sql = "update prefixCenter set timeDistribution='" + timeD + "', gDistribution='" + gD +"' where symbolid=" + d.symbol;		
+//			}
+//			else {
+//				sql = "insert into prefixcenter values(" + d.symbol + "," + d.lat + "," + d.lng + ",'" + gD + "','" + timeD + "')";
+//			}
+//			
+//			jdbc.insertQuery(sql);
+//		}
+//
+//		
+//		RunEndTime = System.currentTimeMillis();
+//		
+//		totTime = RunEndTime - RunStartTime;		
+//		
+//		System.out.println("time = " + totTime + "ms");
+//		
 		////
 		
 //		MergeNeighbor.main(para);
@@ -195,6 +195,8 @@ public class SP_Main {
 			temp.add(i);
 			old_symbol_sequence.add(temp);
 		}
+		
+		Gcenter.jdbc = new JDBC("han");
 		
 		ArrayList<DataSequence> origin = BuildTrajectory.createOrigin();
 		

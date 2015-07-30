@@ -23,7 +23,7 @@ import com.ckenken.storage.Coarse_pattern;
 public class IM_Main {
 	
 	private static final String OUTPUT = "new_IM_DEBUG.txt";  
-	public static final int DT = 3600000;
+	public static final int DT = 7200000;
 	public static final int LENGTH = 4;
 	public static final int SIGMA = 10;
 	public static final int NOT_SIM = 9999;

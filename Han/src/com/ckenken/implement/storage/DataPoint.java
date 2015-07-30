@@ -46,6 +46,8 @@ public class DataPoint {
 		this.gDistribution = new double[MAX_PARENT_G_NUMBER];
 		this.gCounter = new int [MAX_PARENT_G_NUMBER];
 		this.buckets = new int[HashDataPoint.MAX_BUCKETS];
+		
+		this.symbol = -1;
 	}
 	
 	@SuppressWarnings("deprecation")

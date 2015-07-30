@@ -274,8 +274,8 @@ public class CurrentPredict {
 		
 	}
 	
-	public static int findMostSim(DataPoint temp) {
-		
+	public static int findMostSim(DataPoint temp) 
+	{
 		double min = 20000000.0;
 		int minI = -1;
 		for(int i = 0; i<datas.size(); i++) {

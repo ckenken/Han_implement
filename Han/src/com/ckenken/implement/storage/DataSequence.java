@@ -30,4 +30,13 @@ public class DataSequence {
 		return temp;
 	}	
 	
+	public static double similarity() 
+	{
+		double score = 0.0;
+		
+		
+		
+		return score;
+	}
+	
 }

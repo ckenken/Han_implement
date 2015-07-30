@@ -27,6 +27,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import lab.adsl.object.Point;
+import lab.adsl.optics.Haversine;
 import lab.adsl.optics.OPTICS;
 
 import com.ckenken.Main.Main;
@@ -657,8 +658,10 @@ public class ParseCheckin {
 		jdbc.con.close();
 	}
 	
-	public static void findNearRaw() throws SQLException
+	public static ArrayList<ArrayList<Integer>> findNearRaw() throws SQLException
 	{
+		ArrayList<ArrayList<Integer>> output = new ArrayList<ArrayList<Integer>>();
+		
 		JDBC jdbc = new JDBC("han");
 		
 		String sql = "select * from raw2 where same != -1 order by user_id, timenumber";
@@ -676,7 +679,7 @@ public class ParseCheckin {
 		}
 		else {
 			System.out.println("error");
-			return;
+			return null;
 		}
 		
 		while(rs.next()) {
@@ -685,18 +688,74 @@ public class ParseCheckin {
 			int nowId = rs.getInt("id");
 			if ((now-previous) < 7200 && nowUserId == preUserId) {
 				System.out.println(preId + "->" + nowId + ", " + nowUserId);
+				ArrayList<Integer> temp = new ArrayList<Integer>();
+				temp.add(preId);
+				temp.add(nowId);
+				output.add(temp);
 			}
 			preId = nowId;
 			preUserId = nowUserId;
 			previous = now;
 		}
+		return output;
 	}
+	
+	public static void printNearDistance() throws SQLException
+	{
+		if (Gcenter.jdbc == null || Gcenter.jdbc.con.isClosed()) {
+			Gcenter.jdbc = new JDBC("han");
+		}
+		
+		ArrayList<ArrayList<Integer>> list = findNearRaw();
+		
+		for(int i = 0; i<list.size(); i++) {
+			int id1 = list.get(i).get(0);
+			int id2 = list.get(i).get(1);
+
+			double lat1 = 0.0;
+			double lng1 = 0.0;
+			double lat2 = 0.0;
+			double lng2 = 0.0;
+			
+			String sql = "select * from raw2 where id = " + id1;
+			
+			ResultSet rs = Gcenter.jdbc.query(sql);
+			
+			if (rs.next()) {
+				lat1 = rs.getDouble("lat");
+				lng1 = rs.getDouble("lng");
+			}
+			else {
+				System.out.println("Error!");
+				System.exit(1);
+			}
+			rs.close();
+			
+			sql = "select * from raw2 where id = " + id2;
+			
+			rs = Gcenter.jdbc.query(sql);
+			
+			if (rs.next()) {
+				lat2 = rs.getDouble("lat");
+				lng2 = rs.getDouble("lng");
+			}
+			else {
+				System.out.println("Error!");
+				System.exit(1);
+			}
+			rs.close();
+			
+			System.out.println(id1 + "->" + id2 + ": " + Haversine.getDistanceDouble(lat1, lng1, lat2, lng2));
+			
+		}
+	}
+	
 	
 	public static void main(String[] args) throws SQLException, ParseException, IOException, JSONException {
 		
-		PrintStream outstream = new PrintStream(new FileOutputStream(OUTPUT));  
-		System.setOut(outstream);		
-		
+//		PrintStream outstream = new PrintStream(new FileOutputStream(OUTPUT));  
+//		System.setOut(outstream);		
+//		
 //		readCheckin();
 //		readVenues();
 //		updateLatLngIntoRaw();
@@ -720,13 +779,13 @@ public class ParseCheckin {
 
 //		updateTimeNumber();
 
-		findNearRaw();
+//		findNearRaw();
 		
 //		insertGcenterMap();
 	
 		max_gcenter_number = 0;
 		
-		
+		printNearDistance();
 		
 		
 		
